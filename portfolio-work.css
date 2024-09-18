@@ -7,42 +7,41 @@ body {
 
 .top{
     display: flex;
-    justify-content: center;
-    
+    align-items: center;
+    flex-direction: column;
 }
 
 #disclaimer{ 
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
-    background-color:rgb(255, 200, 200);
-    border: 5px solid rgb(255, 100, 100);
+    background-color:rgb(255, 200, 200, 30);
+    border: 5px solid rgb(255, 100, 100, 30);
     border-radius: 10px;
-    width: 270px;
-    height: 100px;
+    width: 25em;
+    height: 2em;
     color: black;
-    position: absolute;
-    left: 30px;
-    opacity: 30%;
+    margin-top: 5px;
     animation-name: disclaimer;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: ease;
 }
 
 @keyframes disclaimer{
     from{
-        opacity: 0;
+        opacity: 0%;
     }
     to{
-        opacity: .3;
+        background-color:rgb(255, 200, 200); 
     }
 }
 
 
 #disclaimer i{
     display: flex;
-    font-size: 2rem;
-    padding-left: 30px;
+    font-size: 1.5rem;
+    padding-left: .6em;
     color: rgb(255, 100, 100);;
 }
 
@@ -208,6 +207,7 @@ section{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: 
+        "disclaimer"
         "item1"
         "item2"
         "item3"
