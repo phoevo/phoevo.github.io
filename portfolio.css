@@ -1,0 +1,442 @@
+body {
+    background-color: rgba(1, 1, 35, 0.995);
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+   
+}
+
+#disclaimer{ 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color:rgb(255, 200, 200);
+    border: 5px solid rgb(255, 100, 100);
+    border-radius: 10px;
+    width: 270px;
+    height: 100px;
+    color: black;
+    position: absolute;
+    left: 30px;
+    opacity: 20%;
+    animation-name: disclaimer;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    
+}
+
+
+#disclaimer i{
+    display: flex;
+    font-size: 2rem;
+    padding-left: 30px;
+    color: rgb(255, 100, 100);;
+}
+
+#disclaimer p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+}
+
+.nav-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 20%);
+    width: 25em;
+    height: 5em;
+}
+
+.nav-buttons button{
+    background-color: rgba(255, 255, 255, 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    height: 3rem;
+    width: 6rem;
+    border-radius: 20px;
+    border: 1px solid white;
+    transition: 100ms;
+}
+
+.workBtn:hover, .aboutBtn:hover{
+    transform: translateY(-3px);
+    transition: 100ms;
+    box-shadow: rgb(10, 10, 10, 0.7) 0px 5px 5px 
+
+}
+
+.homeBtn{
+    transform: translateY(-5px);
+    box-shadow: rgb(10, 10, 10, 0.7) 0px 7px 7px;
+    transition: box-shadow 2s ease-in-out;
+}
+
+/*-------------MIDDLE SECTION----------*/
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mid{
+    display: flex;
+    min-width: 30em;
+    width: 60%;
+    padding-top: 25px;
+    height: 100vh;
+    
+}
+
+.mid-socials{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 10px;
+}
+
+.mid-socials button{
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+
+}
+ 
+#linkedin{
+    font-size: 30px;
+    background-color: rgb(0, 114, 177);
+    border: none;
+    animation-name: linkedin;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    
+}
+@keyframes linkedin{
+    from{
+        opacity: 0;
+        transform: translateY(700px);
+    }
+    to{
+        opacity: 1;
+        
+    }
+    }
+
+
+#email{
+    font-size: 30px;
+    background-color: rgb(177, 18, 18);
+    border: none;
+    animation-name: email;
+    animation-duration: 1100ms;
+    animation-timing-function: ease;
+}
+@keyframes email{
+    from{
+        opacity: 0;
+        transform: translateY(700px);
+    }
+    to{
+        opacity: 1;
+    }
+    }
+
+
+
+
+#github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: rgb(110, 84, 148);
+    border: none;
+    animation-name: github;
+    animation-duration: 1200ms;
+    animation-timing-function: ease;
+}
+@keyframes github{
+    from{
+        opacity: 0;
+        transform: translateY(500px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.mid-container{
+    display: grid;
+    gap: 2%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "item1 item1 item2 item2"
+    "item3 item4 item2 item2"
+    "item3 item4 item5 item5"
+    ;
+}
+
+@media only screen and (max-width: 1200px){
+    .mid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5";
+    }
+   
+}
+
+#item1{
+    grid-area: item1;
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    padding: 2em;
+    row-gap: 2em;
+    
+    background-color: rgb(20, 20, 90);
+    animation-name: item1;
+    animation-duration: 500ms;
+    animation-timing-function: ease;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Trebuchet MS'; 
+}
+
+
+@keyframes item1{
+from{
+    opacity: 0;
+    transform: translateX(-1000px);
+}
+to{
+    opacity: 1;
+}
+
+}
+
+#item1 em{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    font-style: normal;
+}
+#item1 i{
+    display: flex;
+    padding-top: 2em;
+    justify-content: center;
+    font-size: 1em;
+    font-style: normal;
+}
+
+#item2{
+    grid-area: item2;
+    background-color: rgb( 10, 20, 70);
+    animation-name: item2;
+    animation-duration: 600ms;
+    animation-timing-function: ease;
+    border-radius: 1em;
+    display: flex;
+    min-width: 25em;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+@keyframes item2{
+    from{
+        opacity: 0;
+        transform: translateY(-1000px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#pic{
+    border-radius: 50%;
+    border: 1px solid white;
+    height: 24em;
+    width: 25em;
+}
+
+#item3{
+    grid-area: item3;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+    font-family: 'Trebuchet MS';
+    font-size: 1em;
+    font-style: normal;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    background-color: rgb(20, 30, 90);
+    animation-name: item3;
+    animation-duration: 700ms;
+    animation-timing-function: ease;
+    border-radius: 8px;
+}
+    
+@keyframes item3{
+    from{
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.list1{ 
+    display: flex;
+    gap: 1em;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+.list1 h4{
+    font-size: 2em;
+    font-family: 'Trebuchet MS';
+    color: white;
+}
+
+#item3 em{
+    color: palevioletred;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: 1.3rem;
+    margin-left: 10px;
+}
+
+#html-logo{
+    color:#F06529;
+    font-size: 30px;
+}
+
+#css-logo{
+    color: #264de4;
+    font-size: 30px; 
+}
+
+#js-logo{
+    color: #f7df1e;
+    font-size: 30px;
+}
+
+#react-logo{
+    color:#61dbfb;
+    font-size: 30px;
+}
+
+#nodejs-logo{
+    color:#3c873a;
+    font-size: 30px;
+}
+
+
+#item4{
+    grid-area: item4;
+    background-color: rgb(20, 40, 90);
+    animation-name: item4;
+    animation-duration: 900ms;
+    animation-timing-function: ease;
+    border-radius: 8px;
+    font-style: normal;
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+@keyframes item4{
+    from{
+        opacity: 0;
+        transform: translateY(1000px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#item4 h4{
+    font-size: xx-large;
+    font-family: 'Trebuchet MS';
+    color: white;
+    align-self: center;
+}
+
+#item5{
+    grid-area: item5;
+    background-color: rgb(0, 50, 90);
+    animation-name: item5;
+    animation-duration: 1000ms;
+    animation-timing-function: ease;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+    padding-top: 1em;
+    padding-left: 1em;
+    color: white;
+    font-family: 'Trebuchet MS'; 
+    font-size: 1em;
+    min-width: 2em;
+}
+@keyframes item5{
+    from{
+        opacity: 0;
+        transform: translateX(1000px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.resumebutton{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+#resumeBtn{ 
+    align-items: center;
+    font-family: 'Trebuchet MS'; 
+    font-size: large;
+    gap: 10px;
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    border: none;
+}
+
+#resumeBtn:hover{
+    transform: translateY(-2px);
+    transition: 100ms;
+    box-shadow: 0px 5px 5px 0px black;
+}
+
+
+
+
+
