@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", function(){
     let livePreviewDashBtn = document.querySelector("#live-preview-dashboard");
     let viewCodeDashBtn = document.querySelector("#view-code-dashboard");
 
+    let livePreviewFurnBtn = document.querySelector("#live-preview-furniture");
+    let viewCodeFurnBtn = document.querySelector("#view-code-furniture");
+
 /*--------------PAGE CHANGE FUNCTIONALITY--------------*/
     aboutBtn.addEventListener("click", function(){
         linkedinBtn.style.transform = "translateX(-2000px)";
@@ -106,6 +109,15 @@ document.addEventListener("DOMContentLoaded", function(){
     viewCodeDashBtn.addEventListener("click", function(){
         window.open("https://github.com/phoevo/dashboard")
     })
+
+    livePreviewFurnBtn.addEventListener("click", function(){
+        window.open("https://phoevo.github.io/furniture-shop/")
+    })
+
+    viewCodeFurnBtn.addEventListener("click", function(){
+        window.open("https://github.com/phoevo/furniture-shop")
+    })
+
 
     
    
