@@ -251,7 +251,7 @@ to{
 #item1-1{
     grid-area: item1-1;
     display: flex;
-    height: 315px;
+    height: 280px;
     border: 5px solid rgb(255, 255, 255, 2%);
     border-radius: 10px;
     display: flex;
@@ -262,7 +262,7 @@ to{
 #item1-2{
     grid-area: item1-2;
     display: flex;
-    height: 100px;
+    height: 130px;
     flex-direction: column;
     padding-left: 10px;
     padding-top: 10px;
@@ -336,11 +336,13 @@ to{
     }
 }
 
-#dashboard-screenshot{
+#dashboard-screenshot, #furniture-screenshot{
     border-radius: 5px;
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
 }
+
+
 
 
 #item3{
