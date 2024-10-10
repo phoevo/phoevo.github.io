@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function(){
     let emailBtn = document.querySelector("#email");
     let githubBtn = document.querySelector("#github");
     
-    let livePreviewBtn = document.querySelector("#live-preview-rps");
-    let viewCodeBtn = document.querySelector("#view-code-rps");
+    let livePreviewAgendaBtn = document.querySelector("#live-preview-agenda");
+    let viewCodeAgendaBtn = document.querySelector("#view-code-agenda");
 
     let livePreviewDashBtn = document.querySelector("#live-preview-dashboard");
     let viewCodeDashBtn = document.querySelector("#view-code-dashboard");
@@ -93,12 +93,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
 /*-------------------WORK VIEWING FUNCTIONALITY--------------*/
 
-   livePreviewBtn.addEventListener("click", function(){
-        window.open("/projects/rock-paper-scissors/rock-paper-scissors/rock-paper-scissors.html")
+   livePreviewAgendaBtn.addEventListener("click", function(){
+        window.open("https://phoevo.github.io/to-do/")
     })
 
-    viewCodeBtn.addEventListener("click", function(){
-        window.open("https://github.com/phoevo/rock-paper-scissors")
+    viewCodeAgendaBtn.addEventListener("click", function(){
+        window.open("https://github.com/phoevo/to-do/tree/main")
     })
 
     
