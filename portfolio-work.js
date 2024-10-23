@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", function(){
     let linkedinBtn = document.querySelector("#linkedin");
     let emailBtn = document.querySelector("#email");
     let githubBtn = document.querySelector("#github");
+
+    let livePreviewWeatherAppBtn = document.querySelector("#live-preview-weatherapp");
+    let viewCodeWeatherAppBtn = document.querySelector("#view-code-weatherapp");
     
     let livePreviewAgendaBtn = document.querySelector("#live-preview-agenda");
     let viewCodeAgendaBtn = document.querySelector("#view-code-agenda");
@@ -92,6 +95,16 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 
 /*-------------------WORK VIEWING FUNCTIONALITY--------------*/
+
+
+
+    livePreviewWeatherAppBtn.addEventListener("click", function(){
+        window.open("https://phoevo.github.io/weather-app/")
+    })
+
+    viewCodeWeatherAppBtn.addEventListener("click", function(){
+        window.open("https://github.com/phoevo/weather-app")
+    })
 
    livePreviewAgendaBtn.addEventListener("click", function(){
         window.open("https://phoevo.github.io/to-do/")
