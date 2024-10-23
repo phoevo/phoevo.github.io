@@ -9,7 +9,9 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
+    margin-left: 1%;
+
 }
 
 #disclaimer{ 
@@ -27,13 +29,14 @@ body {
     animation-name: disclaimer;
     animation-duration: 2s;
     animation-timing-function: ease;
+    opacity: 30%;
 }
 
 @keyframes disclaimer{
-    from{
+    0%{
         opacity: 0%;
     }
-    to{
+    100%{
         background-color:rgb(255, 200, 200); 
     }
 }
@@ -102,7 +105,7 @@ section{
     width: 60%; 
     padding-top: 25px;
     height: 100vh;
-    margin-left: 10%;
+    margin-left: 9%;
     
 }
 
@@ -190,30 +193,28 @@ section{
     width: 100%;
     display: grid;
     gap: 10px;
-    column-gap: 20px;
+    column-gap: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 450px 450px;
     grid-template-areas: 
     "item4 item1" 
     "item2 item3"
-    "item5 item6"
     ;
 }
 
 @media only screen and (max-width: 1200px){
     .mid-container{
         display: grid;
-        gap: 0px;
+        gap: 10px;
         column-gap: 0px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: 
         "disclaimer"
+        "item4"
         "item1"
         "item2"
-        "item3"
-        "item4"
-        "item5";
+        "item3";
     }
    
 }
@@ -434,36 +435,37 @@ to{
 
 #item4{
     grid-area: item4;
-    background-color: rgb(20, 30, 90);
+    background-color: rgb(10, 20, 80);
     animation-name: item4;
-    animation-duration: 900ms;
+    animation-duration: 600ms;
     animation-timing-function: ease;
     border-radius: 8px;
+    display: flex;
     color: white;
     font-family: 'Trebuchet MS';
-    font-size: larger;
+    font-size: large;
 
     display: grid;
     gap: 5px;
     grid-template-columns: 1.5fr 0.5fr;
     grid-template-rows: 1.3fr 0.7fr;
     grid-template-areas: 
-    "item1-1 item1-1" 
-    "item1-2 item1-3"
+    "item4-1 item4-1" 
+    "item4-2 item4-3"
     ;
 }
 @keyframes item4{
-    from{
-        opacity: 0;
-        transform: translateX(-2000px);
-    }
-    to{
-        opacity: 1;
-    }
+from{
+    opacity: 0;
+    transform: translateX(-2000px);
+}
+to{
+    opacity: 1;
+}
 }
 
 #item4-1{
-    grid-area: item1-1;
+    grid-area: item4-1;
     display: flex;
     height: 210px;
     border: 5px solid rgb(255, 255, 255, 2%);
@@ -474,7 +476,7 @@ to{
 }
 
 #item4-2{
-    grid-area: item1-2;
+    grid-area: item4-2;
     display: flex;
     height: 200px;
     flex-direction: column;
@@ -492,13 +494,13 @@ to{
 }
 
 #item4-3{
-    grid-area: item1-3;
+    grid-area: item4-3;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    border: 5px solid rgb(255, 255, 255, 3%);
+    border: 5px solid rgb(255, 255, 255, 2%);
     border-radius: 10px;
 }
 #item4-3 button{
