@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let livePreviewWeatherAppBtn = document.querySelector("#live-preview-weatherapp");
     let viewCodeWeatherAppBtn = document.querySelector("#view-code-weatherapp");
-    
+
     let livePreviewAgendaBtn = document.querySelector("#live-preview-agenda");
     let viewCodeAgendaBtn = document.querySelector("#view-code-agenda");
 
-    let livePreviewDashBtn = document.querySelector("#live-preview-dashboard");
-    let viewCodeDashBtn = document.querySelector("#view-code-dashboard");
+    let livePreviewAIrecipe = document.querySelector("#live-preview-AIrecipe");
+    let viewCodeAIrecipe = document.querySelector("#view-code-AIrecipe");
 
     let livePreviewFurnBtn = document.querySelector("#live-preview-furniture");
     let viewCodeFurnBtn = document.querySelector("#view-code-furniture");
@@ -38,57 +38,57 @@ document.addEventListener("DOMContentLoaded", function(){
 /*--------------LINKEDIN FUNCTIONALITY--------------*/
     linkedinBtn.addEventListener("mouseover", Lhover, false);
     linkedinBtn.addEventListener("mouseout", LhoverAfter, false);
-    
-    
-    function Lhover(){ 
+
+
+    function Lhover(){
         linkedinBtn.className = "fa-solid fa-arrow-up-right-from-square";
         linkedinBtn.style.width = "70px";
         linkedinBtn.style.transition = "200ms";
     }
 
-    function LhoverAfter(){  
+    function LhoverAfter(){
         linkedinBtn.className = "fa-brands fa-linkedin";
         linkedinBtn.style.width = "50px";
-    }   
+    }
     linkedinBtn.addEventListener("click", function(){
         window.open("https://www.linkedin.com/in/phoevos-maniski-73392b25b/")
     });
 
-  
+
 
 /*--------------EMAIL FUNCTIONALITY--------------*/
     emailBtn.addEventListener("mouseover", Ehover, false);
     emailBtn.addEventListener("mouseout", EhoverAfter, false);
-    
-    function Ehover(){ 
+
+    function Ehover(){
         emailBtn.className = "fa-solid fa-envelope-open";
         emailBtn.style.height= "70px";
         emailBtn.style.transition = "200ms";
     }
 
-    function EhoverAfter(){  
+    function EhoverAfter(){
         emailBtn.className = "fa-solid fa-envelope";
         emailBtn.style.height = "50px";
         emailBtn.style.width = "50px";
-    }   
+    }
 
 /*--------------GITHUB FUNCTIONALITY--------------*/
     githubBtn.addEventListener("mouseover", Ghover, false);
     githubBtn.addEventListener("mouseout", GhoverAfter, false);
-    
-    function Ghover(){ 
+
+    function Ghover(){
         githubBtn.className = "fa-brands fa-github";
         githubBtn.style.height = "70px";
         githubBtn.style.width = "70px";
         githubBtn.style.transition = "200ms";
-        
+
     }
 
-    function GhoverAfter(){  
+    function GhoverAfter(){
         githubBtn.className = "fa-brands fa-github";
         githubBtn.style.height = "50px";
         githubBtn.style.width = "50px";
-    }   
+    }
 
     githubBtn.addEventListener("click", function(){
         window.open("https://github.com/phoevo")
@@ -114,13 +114,14 @@ document.addEventListener("DOMContentLoaded", function(){
         window.open("https://github.com/phoevo/to-do/tree/main")
     })
 
-    
-    livePreviewDashBtn.addEventListener("click", function(){
-        window.open("/projects/dashboard/dashboard.html")
-    })
 
-    viewCodeDashBtn.addEventListener("click", function(){
-        window.open("https://github.com/phoevo/dashboard")
+    /*
+    livePreviewAIrecipe.addEventListener("click", function(){
+    })
+    */
+
+    viewCodeAIrecipe.addEventListener("click", function(){
+        window.open("https://github.com/phoevo/recipe-app")
     })
 
     livePreviewFurnBtn.addEventListener("click", function(){
@@ -132,8 +133,6 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 
 
-    
-   
+
+
 })
-
-
