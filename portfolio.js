@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 /*--------------RESUME FUNCTIONALITY--------------*/
     resumeBtn.addEventListener("click", function(){
-        window.open("/Images/Resume-Maniski.pdf")
+        window.open("/Images/ResumeManiski.pdf")
     })
 
 
